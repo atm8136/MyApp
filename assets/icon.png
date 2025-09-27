@@ -1,0 +1,8 @@
+# Placeholder icon file - Replace with actual icon
+# This file represents where the application icon should be placed
+# For production, replace with:
+# - icon.png (256x256 for Linux)
+# - icon.ico (multi-size for Windows) 
+# - icon.icns (multi-size for macOS)
+
+MyApp Icon

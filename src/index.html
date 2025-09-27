@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyApp - Standalone Desktop Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>MyApp</h1>
+            <p class="subtitle">Standalone Desktop Application</p>
+        </header>
+
+        <main class="main-content">
+            <div class="welcome-section">
+                <h2>Welcome to MyApp</h2>
+                <p>This is a standalone desktop application designed to work with dhadon.com UI or similar platforms.</p>
+            </div>
+
+            <div class="features-section">
+                <h3>Features</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h4>Cross-Platform</h4>
+                        <p>Runs on Windows, macOS, and Linux</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🖥️</div>
+                        <h4>Desktop Native</h4>
+                        <p>Full desktop integration and functionality</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h4>Web Technologies</h4>
+                        <p>Built with HTML, CSS, and JavaScript</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Fast & Responsive</h4>
+                        <p>Optimized for performance and user experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions-section">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <button id="btn-new" class="btn btn-primary">New Project</button>
+                    <button id="btn-open" class="btn btn-secondary">Open File</button>
+                    <button id="btn-settings" class="btn btn-secondary">Settings</button>
+                    <button id="btn-help" class="btn btn-secondary">Help</button>
+                </div>
+            </div>
+
+            <div class="status-section">
+                <h3>System Information</h3>
+                <div class="status-info">
+                    <div class="status-item">
+                        <span class="status-label">Platform:</span>
+                        <span id="platform" class="status-value">Loading...</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Version:</span>
+                        <span id="version" class="status-value">1.0.0</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Status:</span>
+                        <span id="status" class="status-value">Ready</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 MyApp - Built for dhadon.com UI compatibility</p>
+        </footer>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

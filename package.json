@@ -1,0 +1,52 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "A standalone desktop application that can run on dhadon.com UI or similar platforms",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build-win": "electron-builder --win",
+    "build-mac": "electron-builder --mac",
+    "build-linux": "electron-builder --linux",
+    "dev": "electron . --dev",
+    "test": "node test/structure-test.js"
+  },
+  "keywords": [
+    "electron",
+    "desktop",
+    "standalone",
+    "dhadon"
+  ],
+  "author": "atm8136",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.dhadon.myapp",
+    "productName": "MyApp",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icon.png"
+    }
+  }
+}
